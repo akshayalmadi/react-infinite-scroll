@@ -1,5 +1,3 @@
-import { useRef } from "react";
-import InfiniteScroll from "react-infinite-scroller";
 import { useInfiniteQuery } from "react-query";
 import InfiniteScroller from "./InfiniteScroller";
 import PostCard from "./PostCard";
@@ -37,7 +35,7 @@ export default function App() {
           page.results.map((post) => <PostCard key={post.id} post={post} />)
         )}
       </InfiniteScroller>
-      {isFetchingNextPage && <h1>Fetching next page</h1>}
+      {isFetchingNextPage && <h1>Loading more images</h1>}
     </div>
   );
 }
