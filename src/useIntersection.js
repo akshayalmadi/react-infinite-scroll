@@ -1,5 +1,6 @@
 import React from "react";
 
+// Custom Hook used for IntersectionObserver
 export default function useIntersectionObserver({
   root,
   target,
